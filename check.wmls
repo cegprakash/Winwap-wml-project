@@ -1,0 +1,93 @@
+extern function find(){
+
+	var score2=0;
+	var maxscore2=WMLBrowser.getVar("maxscore2");
+	var maxperson2=WMLBrowser.getVar("maxperson2");
+
+	var answer1=WMLBrowser.getVar("answer1");
+	var answer2=WMLBrowser.getVar("answer2");
+	var answer3=WMLBrowser.getVar("answer3");
+	var answer4=WMLBrowser.getVar("answer4");
+	var answer5=WMLBrowser.getVar("answer5");
+	var answer6=WMLBrowser.getVar("answer6");
+	var answer7=WMLBrowser.getVar("answer7");
+	var answer8=WMLBrowser.getVar("answer8");
+	var answer9=WMLBrowser.getVar("answer9");
+	var answer10=WMLBrowser.getVar("answer10");
+	var answer11=WMLBrowser.getVar("answer11");
+	var answer12=WMLBrowser.getVar("answer12");
+	var answer13=WMLBrowser.getVar("answer13");
+	var answer14=WMLBrowser.getVar("answer14");
+	var answer15=WMLBrowser.getVar("answer15");
+	var answer16=WMLBrowser.getVar("answer16");
+	var answer17=WMLBrowser.getVar("answer17");
+	var answer18=WMLBrowser.getVar("answer18");
+	var answer19=WMLBrowser.getVar("answer19");
+	var answer20=WMLBrowser.getVar("answer20");
+	var answer21=WMLBrowser.getVar("answer21");
+	var answer22=WMLBrowser.getVar("answer22");
+	var answer23=WMLBrowser.getVar("answer23");
+	var answer24=WMLBrowser.getVar("answer24");
+	var answer25=WMLBrowser.getVar("answer25");
+	var answer26=WMLBrowser.getVar("answer26");
+	var answer27=WMLBrowser.getVar("answer27");
+	var answer28=WMLBrowser.getVar("answer28");
+	var answer29=WMLBrowser.getVar("answer29");
+	var answer30=WMLBrowser.getVar("answer30");
+
+	if(String.compare(answer1,"axe")==0) score2++;
+	if(String.compare(answer2,"zap")==0) score2++;
+	if(String.compare(answer3,"opaque")==0) score2++;
+	if(String.compare(answer4,"symbol")==0) score2++;
+	if(String.compare(answer5,"zaxoq")==0) score2++;
+	if(String.compare(answer6,"ceg")==0) score2++;
+	if(String.compare(answer7,"sweden")==0) score2++;
+	if(String.compare(answer8,"polish")==0) score2++;
+	if(String.compare(answer9,"bunk")==0) score2++;
+	if(String.compare(answer10,"pandu")==0) score2++;
+	if(String.compare(answer11,"shoaib")==0) score2++;
+	if(String.compare(answer12,"yuvislm")==0) score2++;
+	if(String.compare(answer13,"kasapjason")==0) score2++;
+	if(String.compare(answer14,"huh")==0) score2++;
+	if(String.compare(answer15,"twelfth")==0) score2++;
+	if(String.compare(answer16,"zombies")==0) score2++;
+	if(String.compare(answer17,"lollifying")==0) score2++;
+	if(String.compare(answer18,"awesome")==0) score2++;
+	if(String.compare(answer19,"vengiful")==0) score2++;
+	if(String.compare(answer20,"shredder")==0) score2++;
+	if(String.compare(answer21,"monk")==0) score2++;
+	if(String.compare(answer22,"jackqueline")==0) score2++;
+	if(String.compare(answer23,"occurrence")==0) score2++;
+	if(String.compare(answer24,"cemetery")==0) score2++;
+	if(String.compare(answer25,"changeable")==0) score2++;
+	if(String.compare(answer26,"ridiculous")==0) score2++;
+	if(String.compare(answer27,"questionnaire")==0) score2++;
+	if(String.compare(answer28,"privilege")==0) score2++;
+	if(String.compare(answer29,"rhythm")==0) score2++;
+	if(String.compare(answer30,"tyranny")==0) score2++;
+	
+	score2=-score2;
+	WMLBrowser.setVar("score2",score2);
+	if(score2<10)
+      	  Dialogs.alert("Your score is just "+score2);
+	else if(score2<20)
+	  Dialogs.alert("Not bad. You scored "+score2);
+	else
+	  Dialogs.alert("AWESOME!! You scored "+score2); 	
+	
+
+	if(score2>maxscore2)
+	{
+		maxscore2=score2;
+		maxperson2=Dialogs.prompt("You just set a new high score!! Enter your name","");
+	
+	}	
+		
+	WMLBrowser.setVar("maxscore2",maxscore2);
+	WMLBrowser.setVar("maxperson2",maxperson2);
+
+
+
+	WMLBrowser.go("#1");
+
+}

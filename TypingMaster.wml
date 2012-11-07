@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC
+    "-//WAPFORUM//DTD WML 1.1//EN"
+    "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+
+	
+
+<wml>
+	var maxscore1, maxscore2, maxscore3, maxscore4, maxscore5, maxperson1, maxperson2,maxperson3, maxperson4, maxperson5;
+	
+
+	<card id="1" title="Welcome">	
+	  
+      	  <br/><br/><big>
+		<b>Games</b> 
+		<br/>
+		<br/><a href="#2">1. 60 seconds to fame</a>	
+		<br/><a href="#4">2. Dare to Dare</a>
+		<br/><a href="#5">3. Memory</a>
+		<br/><a href="#6">4. Captcha challenge</a> 
+
+		<br/> <br/><a href="#7">View HIGH SCORES</a><br/><br/>
+		<br/><br/><b>Rules and Mission</b>
+	
+		<br/><br/>1. Type as it is.
+		<br/>2. Spacing must be accurate.
+		<br/>3. Case sensitive.
+		<br/>4. Hacking/Violation is not allowed
+	
+
+	 </big>
+
+		<br/><br/><br/><br/><br/>
+		
+		All rights reserved.<br/><br/><br/><br/>
+		Created for fun by CEGPRAKASH
+		
+
+
+
+	 </card>
+
+
+
+
+
+
+
+	<card id="2" title="60 seconds to fame" ontimer="condition.wmls#find()">
+	    TIME: 60 seconds 
+	    
+
+            <timer value="600"/>
+	     <br/><br/><br/><br/>
+	    
+	    <big> <b> 
+	       College of Engineering, Guindy in Chennai, India, is India's oldest engineering and technical institution, having been established in 1794. Today it is one of the four constituent colleges of Anna University, Chennai. It was started in May 1794 as a School of Survey and established as a college in 1859 under the Madras University, and is one of the oldest technical institutes in the world.
+             </b> </big>
+		
+	     <br/><br/><br/>
+		
+
+             Enter the text above: 
+	      <input name="answer"  size="50" maxlength="500" emptyok="true"/>
+		    
+
+	     <br/> <br/>
+	     <a href="condition.wmls#find()"> SUBMIT </a>
+
+	
+	     <br/> <br/>
+	
+	   	
+	
+
+	</card>
+
+
+
+
+
+	<card id="3" title="Result sheet">   
+               <b>
+		<br/><br/><br/>
+		Your typing speed: <big> $(cnt) </big> words per minute
+		
+		<br/><br/>
+		Accuracy : <big> $(correct) % </big>
+	
+		
+		<br/><br/>
+		Points : <big> $(points) </big>
+		<br/><br/><br/>	
+		</b>
+
+
+
+		<p>Try again</p>
+
+		<br/><br/><br/>
+	        <a href="#1">Main menu</a>	
+		
+
+
+	 </card>
+
+
+	<card id="4" title="Dare to Dare">
+		TIME : 45 Seconds
+		<br/>axe                   :  <input name="answer1"  size="20" maxlength="15" emptyok="true"/>
+		<br/>zap                   :  <input name="answer2"  size="20" maxlength="15" emptyok="true"/>
+		<br/>opaque                :  <input name="answer3"  size="20" maxlength="15" emptyok="true"/>
+		<br/>symbol                :  <input name="answer4"  size="20" maxlength="15" emptyok="true"/>
+		<br/>zaxoq                 :  <input name="answer5"  size="20" maxlength="15" emptyok="true"/>
+		<br/>ceg                   :  <input name="answer6"  size="20" maxlength="15" emptyok="true"/>
+		<br/>sweden                :  <input name="answer7"  size="20" maxlength="15" emptyok="true"/>
+		<br/>polish                :  <input name="answer8"  size="20" maxlength="15" emptyok="true"/>
+		<br/>bunk                  :  <input name="answer9"  size="20" maxlength="15" emptyok="true"/>
+		<br/>pandu                 :  <input name="answer10"  size="20" maxlength="15" emptyok="true"/>
+		<br/>shoaib                :  <input name="answer11"  size="20" maxlength="15" emptyok="true"/>
+		<br/>yuvislm               :  <input name="answer12"  size="20" maxlength="15" emptyok="true"/>
+		<br/>kasapjason            :  <input name="answer13"  size="20" maxlength="15" emptyok="true"/>
+		<br/>huh                   :  <input name="answer14"  size="20" maxlength="15" emptyok="true"/>
+		<br/>twelfth               :  <input name="answer15"  size="20" maxlength="15" emptyok="true"/>
+		<br/>zombies               :  <input name="answer16"  size="20" maxlength="15" emptyok="true"/>
+		<br/>lollifying            :  <input name="answer17"  size="20" maxlength="15" emptyok="true"/>
+		<br/>awesome               :  <input name="answer18"  size="20" maxlength="15" emptyok="true"/>
+		<br/>vengiful              :  <input name="answer19"  size="20" maxlength="15" emptyok="true"/>
+		<br/>shredder              :  <input name="answer20"  size="20" maxlength="15" emptyok="true"/>
+		<br/>monk                  :  <input name="answer21"  size="20" maxlength="15" emptyok="true"/>
+		<br/>jackqueline           :  <input name="answer22"  size="20" maxlength="15" emptyok="true"/>
+		<br/>occurrence            :  <input name="answer23"  size="20" maxlength="15" emptyok="true"/>
+		<br/>cemetery              :  <input name="answer24"  size="20" maxlength="15" emptyok="true"/>
+		<br/>changeable            :  <input name="answer25"  size="20" maxlength="15" emptyok="true"/>
+		<br/>ridiculous            :  <input name="answer26"  size="20" maxlength="15" emptyok="true"/>
+		<br/>questionnaire         :  <input name="answer27"  size="20" maxlength="15" emptyok="true"/>
+		<br/>privilege             :  <input name="answer28"  size="20" maxlength="15" emptyok="true"/>
+		<br/>rhythm                :  <input name="answer29"  size="20" maxlength="15" emptyok="true"/>
+		<br/>tyranny               :  <input name="answer30"  size="20" maxlength="15" emptyok="true"/>				
+
+		<onevent type="ontimer">
+		  
+			<go href="check.wmls#find()" />	
+
+                </onevent> 
+	        <timer value="450"/>
+
+
+
+	</card>
+
+
+	<card id="5" title="Memory">
+
+		<p>Memorize the previously displayed text</p>
+
+		<br/><br/><br/><br/><br/><br/>
+		Click to play : 
+
+		<do> 
+	        <go href="memory.wmls#find()"/>
+		</do>
+
+	</card>
+
+
+	<card id="6" title="Captcha challenge">
+
+
+	        <b><big> TIME: 90 seconds </big></b><br/>	<br/><br/>
+		
+		<img src="Captchas/(1).jpg"/>	<img src="Captchas/(2).jpg"/><img src="Captchas/(3).jpg"/><img src="Captchas/(4).jpg"/>		<img src="Captchas/(5).jpg"/>		
+	
+
+		
+		<br/><input name="ans1"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans2"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans3"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans4"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans5"  size="17" maxlength="15" emptyok="true"/>
+		<br/>
+
+		<img src="Captchas/(6).jpg"/>	<img src="Captchas/(7).jpg"/><img src="Captchas/(8).jpg"/><img src="Captchas/(9).jpg"/>		<img src="Captchas/(10).jpg"/>		
+	
+
+		
+		<br/><input name="ans6"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans7"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans8"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans9"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans10"  size="17" maxlength="15" emptyok="true"/>
+		<br/>
+		<img src="Captchas/(11).jpg"/>	<img src="Captchas/(12).jpg"/><img src="Captchas/(13).jpg"/><img src="Captchas/(14).jpg"/>	<img src="Captchas/(15).jpg"/>		
+	
+
+		
+		<br/><input name="ans11"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans12"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans13"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans14"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans15"  size="17" maxlength="15" emptyok="true"/>
+		<br/>
+
+		
+		<img src="Captchas/(16).jpg"/>	<img src="Captchas/(17).jpg"/><img src="Captchas/(18).jpg"/><img src="Captchas/(19).jpg"/>		<img src="Captchas/(20).jpg"/>		
+	
+
+		
+		<br/><input name="ans16"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans17"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans18"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans19"  size="17" maxlength="15" emptyok="true"/>
+		<input name="ans20"  size="17" maxlength="15" emptyok="true"/>
+		<br/><br/><br/><br/>
+		<big>
+		<a href="captchacheck.wmls#find()">SUBMIT</a><br/><br/><br/><br/>Click to break : 
+		</big>
+
+		<onevent type="ontimer">
+	         	<do>
+			<go href="captchacheck.wmls#find()" />
+			</do>
+		</onevent>
+		<timer value="900" />
+		
+
+	</card>
+
+
+	<card id="7" title="High Scores">
+		<big><b>
+		<br/>	
+		Highscores<br/><br/>
+		<p>
+					
+		1. 60 Seconds to fame     $(maxperson1)  $(maxscore1) <br/>
+		2. Dare to Dare		  $(maxperson2)  $(maxscore2)<br/>
+		3. Memory		  $(maxperson3)  $(maxscore3)<br/>
+		4. Captcha Challenge	  $(maxperson4)  $(maxscore4)<br/>
+		
+				
+		</p>
+		</b></big>
+		<br/><br/><br/>
+		<a href="#1">Main menu</a>
+		
+
+
+	</card>
+
+
+</wml>

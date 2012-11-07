@@ -1,0 +1,70 @@
+extern function find(){
+	var score4=0;
+	var maxscore4=WMLBrowser.getVar("maxscore4");
+	var maxperson4=WMLBrowser.getVar("maxperson4");
+
+	if(String.compare(WMLBrowser.getVar("ans1"),"inoplart" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans2"),"uracksico" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans3"),"shimentsha" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans4"),"ganableg" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans5"),"denpicalca" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans6"),"gimingly" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans7"),"elowdwirr" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans8"),"skyglecha" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans9"),"survolls" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans10"),"nogratechl" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans11"),"vouzederge" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans12"),"phitringe" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans13"),"redinsalo" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans14"),"subvitioni" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans15"),"suburodult" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans16"),"oxyeduch" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans17"),"resesings" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans18"),"arwhilap" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans19"),"draalkyqag" )==0)
+		score4++;
+	if(String.compare(WMLBrowser.getVar("ans20"),"curniseup" )==0)
+		score4++;
+
+	score4=-score4;
+	
+	if(score4>-1)
+      	      Dialogs.alert("Your Score : "+score4);
+	
+
+
+	
+	if(score4>maxscore4)
+	{
+		maxscore4=score4;
+		maxperson4=Dialogs.prompt("You just set a new high score!! Enter your name","");
+	
+	}	
+		
+	WMLBrowser.setVar("maxscore4",maxscore4);
+	WMLBrowser.setVar("maxperson4",maxperson4);
+
+
+
+
+	WMLBrowser.go("#1");	
+
+}

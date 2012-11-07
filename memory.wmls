@@ -1,0 +1,148 @@
+extern function find(){
+	var score3=0;
+	var maxscore3=WMLBrowser.getVar("maxscore3");
+	var maxperson3=WMLBrowser.getVar("maxperson3");
+
+	
+	 Dialogs.confirm("If the message displayed before is same as the previously displayed message give Yes and No otherwise","OK Got it","Cancel");
+	 Dialogs.alert("Remember this text");
+	 var str=Dialogs.confirm("Remeber this text", "Yes", "No");
+	
+
+	
+	if(str==true){
+		score3++;
+		str=Dialogs.confirm("Hello","Yes","No");
+		if(str==false){
+			score3++;
+			str=Dialogs.confirm("I said Hello","Yes","No");
+			if(str==false){
+				score3++;
+				str=Dialogs.confirm("You are a fool","Yes","No");
+				if(str==false){
+					score3++;
+					str=Dialogs.confirm("You are a fool","Yes","No");
+					if(str==true){
+						score3++;
+						str=Dialogs.confirm("This game sucks","Yes","No");
+						if(str==false){
+							score3++;
+							str=Dialogs.confirm("Remeber this. This game is gonna be more strict","Yes","No");
+							if(str==false){
+								score3++;
+								str=Dialogs.confirm("This game is gonna be more strict","Yes","No");
+
+
+	if(str==false){
+		score3++;
+		str=Dialogs.confirm("Do you hate this game?","Yes","No");
+		if(str==false){
+			score3++;
+			str=Dialogs.confirm("Do you like this game?", "Yes","No");
+			if(str==false){
+				score3++;
+				str=Dialogs.confirm("Do you have brain?","Yes","No");
+				if(str==false){
+					score3++;
+					str=Dialogs.confirm("Do you have BRAIN?","Yes","No");
+					if(str==false){
+					
+						score3++;
+						str=Dialogs.confirm("BaNaNA","Yes","No");
+					
+						if(str==false){
+							str=Dialogs.confirm("BAnaNA","Yes","No");
+							score3++;
+							if(str==false){
+								score3++;
+								str=Dialogs.confirm("BAnaNA","Yes","No");
+
+
+	if(str==true){
+		score3++;
+		str=Dialogs.confirm("Game Over. Your scored 30","Yes","No");
+		if(str==false){
+			score3++;
+			str=Dialogs.confirm("Will you give treat at KFC tonight?","Yes","No");
+			if(str==false){
+				score3++;
+				str=Dialogs.confirm("Will you give treat at KFC tonight?","Yes","No");
+				if(str==true){
+					str=Dialogs.confirm("Will you give treat at KFC tonight?","Yes","No");
+					score3++;
+					if(str==true){
+						Dialogs.alert("Congrats. You won this game. You must give treat at KFC tonight as promised");
+
+					}				
+
+
+
+				}			
+
+
+			}
+
+		}		
+
+					
+	}
+													
+		
+
+							}
+						
+		
+						}
+
+				
+					}
+
+				}
+				
+
+			}		
+
+		}	
+
+	}
+
+
+							}	
+						}
+					}
+				}
+			}
+		}
+
+	}
+	
+
+
+
+	score3=-score3;
+	if(score3<2)
+	  Dialogs.alert("Game Over. The rule of the game is to remember the previously displayed text");
+	
+	else
+	   Dialogs.alert("Game Over. You scored "+score3+" points.");
+
+
+
+
+	if(score3>maxscore3)
+	{
+		maxscore3=score3;
+		maxperson3=Dialogs.prompt("You just set a new high score!! Enter your name","");
+	
+	}	
+		
+	WMLBrowser.setVar("maxscore3",maxscore3);
+	WMLBrowser.setVar("maxperson3",maxperson3);
+
+
+
+
+
+	WMLBrowser.go("#1");
+
+}

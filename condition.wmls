@@ -1,0 +1,64 @@
+extern function find()
+{
+					
+		var array="College of Engineering, Guindy in Chennai, India, is India's "+  ("oldest engineering and technical institution, having been established in 1794. "+ ("Today it is one of the four constituent colleges of Anna University, " +("Chennai. It was started in May 1794 as a School of Survey and established "+("as a college in 1859 under the Madras University, and "+("is one of the oldest technical institutes in the world.")))));
+	
+		var correct=0;
+		var points=0; 
+
+		var maxscore1=WMLBrowser.getVar("maxscore1");
+		var maxperson1=WMLBrowser.getVar("maxperson1");
+
+		var answer=WMLBrowser.getVar("answer");
+		
+		
+		var cnt=String.elements(answer," ");
+		
+		for(var i=0; i<cnt; i++)
+		{
+			
+
+			var msg1=String.elementAt(answer, i, " ");
+			var msg2=String.elementAt(array,i," ");
+			
+
+			if(String.compare(msg1,msg2)==0)
+				correct++;
+			
+		}
+		
+		
+		correct=-correct;
+		
+		var correctcnt=correct;
+		correct=correct/cnt*100;
+
+		points= correctcnt+ (correct/100*35);		
+
+		if(points>maxscore1)
+		{
+			maxscore1=points;
+			maxperson1=Dialogs.prompt("You just set a new high score!! Enter your name","");
+	
+		}	
+		
+
+		WMLBrowser.setVar("cnt", cnt);
+	
+		WMLBrowser.setVar("maxscore1",maxscore1);
+		WMLBrowser.setVar("maxperson1",maxperson1);
+
+
+		WMLBrowser.setVar("points",points);
+		WMLBrowser.setVar("correct", correct);
+
+
+
+
+		
+
+   		WMLBrowser.go("#3");
+
+
+	
+}
